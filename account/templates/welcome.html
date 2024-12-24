@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<div class="container text-center my-5">
+    <h1 class="display-5 fw-bold text-center my-2">Welcome to QuizApp</h1>
+    <p class="fs-3">Not just a quiz app, but a journey of knowledge and fun!</p>
+    <div class="d-flex justify-content-center">
+       <a href="./all-quiz.html" class="btn btn-primary">Start Quiz</a>
+       <a href="./register.html" class="btn btn-secondary ms-3">Sign Up</a>
+
+
+    </div>
+  </div>
+  <div class="container text-center">
+    <h1 class="display-4 text-center py-5">Leaderboard</h1>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mx-3">
+        <div class="col-lg-4 position-relative mb-4">
+          <img src="{% static 'images/images.png' %}"  width="140" height="140" class="img-fluid" alt="user-profile">
+          <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">1</span>
+          <h2 class="fw-normal">Heading</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 position-relative">
+          <img src="{% static 'images/images.png' %}"  width="140" height="140" class="img-fluid" alt="user-profile">
+          <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">2</span>
+
+          <h2 class="fw-normal">Heading</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 position-relative">
+          <img src="{% static 'images/images.png' %}"  width="140" height="140" class="img-fluid" alt="user-profile">
+          <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">3</span>
+          <h2 class="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+        <div class="col-lg-4 position-relative">
+          <img src="{% static 'images/images.png' %}"  width="140" height="140" class="img-fluid" alt="user-profile">
+          <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">4</span>
+          <h2 class="fw-normal">Heading</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    
+  </div>
+{% endblock content %}

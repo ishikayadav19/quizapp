@@ -1,0 +1,81 @@
+{% extends "index.html" %}
+{% block content %}
+ <h1 class="display-5 text-center my-5">Ishika's Profile</h1>
+      <div class="container text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary">Edit</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+          </div>
+          <div class="container text-center my-4">
+            <div class="row row-cols-sm-1 row-cols-md-2">
+              <div class="col-12">
+                <img src="./images.png" width="150" height="150" alt="">
+                <h2 class=" fs-3">@Ishika</h2>
+              </div>
+              <div class="col-12">
+                <h2>Ishika Yadav</h2>
+                <p class="fs-5"><i class="bi bi-gender-female"></i> Female</p>
+                <p class="fs-5"><i class="bi bi-geo-alt-fill"></i> Lucknow</p>
+                <p class="fs-5"><i class="bi bi-file-person"></i> I am a coder</p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-5">
+          <div class="container">
+            <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
+                <div class="col-12">
+                    <h3>Quiz Attended by @Ishika</h3>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Quiz</th>
+                            <th scope="col">Marks</th>
+                            <th scope="col">Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>DAA</td>
+                            <td>9/10</td>
+                            <td>December 10, 2024, 9:00PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>DSA</td>
+                            <td>6/10</td>
+                            <td>December 12, 2024, 8:00PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>OOPS</td>
+                            <td>7/10</td>
+                            <td>December 13, 2024, 11:00PM</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>WT</td>
+                            <td>9/10</td>
+                            <td>December 14, 2024, 10:00PM</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>PYTHON</td>
+                            <td>10/10</td>
+                            <td>December 15, 2024, 10:00PM</td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+        
+                  
+                </div>
+                <div class="col-12">
+                    <h3>@Ishika's Performance</h3>
+                </div>
+              </div>
+              </div>
+      </div>
+{% endblock content %}
